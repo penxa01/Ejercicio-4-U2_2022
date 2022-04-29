@@ -9,6 +9,7 @@ if __name__ ==  '__main__':
     ventanaInicio.mostrar()
 
     print('Ventana: {} Alto: {} Ancho: {}'.format(ventanaInicio.getTitulo(),ventanaInicio.alto(),ventanaInicio.ancho()))
+    
     input ("ENTER PARA CONTINUAR")
     
     print('==== Ventana Cargar ====')

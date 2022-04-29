@@ -20,26 +20,30 @@ class Ventana:
         return self.__titulo
 
     def ancho(self):
-        return self.__xVertiInf
+        return (self.__xVertiInf - self.__xVertiSup)
 
     def alto(self):
-        return self.__yVertiInf
+        return (self.__yVertiInf - self.__yVertiSup)
     
     def moverDerecha(self,X = 10):
-        self.__xVertiSup += X
-        self.__xVertiInf += X
-    
+        if (self.__xVertiInf <500) and (self.__xVertiSup > 0):
+            self.__xVertiSup += X
+            self.__xVertiInf += X
+        
     def moverIzquierda(self,X = 10):
-        self.__xVertiSup -= X
-        self.__xVertiInf -= X
-    
+        if (self.__xVertiInf <500) and (self.__xVertiSup > 0):
+            self.__xVertiSup -= X
+            self.__xVertiInf -= X
+        
     def bajar(self,Y = 10):
-        self.__yVertiSup += Y
-        self.__yVertiInf += Y
+        if (self.__yVertiInf <500) and (self.__yVertiSup > 0):
+            self.__yVertiSup += Y
+            self.__yVertiInf += Y
     
     def subir (self,Y= 10):
-        self.__yVertiSup -= Y
-        self.__yVertiInf -= Y
+        if (self.__yVertiInf <500) and (self.__yVertiSup > 0):
+            self.__yVertiSup -= Y
+            self.__yVertiInf -= Y
 
     
 
